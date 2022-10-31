@@ -139,7 +139,8 @@ const database = {
     'fmmag': 40050,
     'm60': 40050,
     'gau19': 40050,
-    'xm2': 40050,
+    'xm25': 40050,
+    'nerotonin5a': 15000,
     'exterminatormesh': 40250,
     'exterminatormeshgt': 40250,
     'duskmesh': 40250,
@@ -214,6 +215,22 @@ const database = {
     'boomerpx': 57650,
     'xm79': 57650,
     'dawnlauncher': 57650,
+    'experienceimplant': 62612,
+    'rageimplant': 62612,
+    'agilityimplant': 62612,
+    'survivalimplant': 62612,
+    'notorietyimplant': 62612,
+    'hunterimplant': 62612,
+    'scavengerimplant': 62612,
+    'ingenuityimplant': 62612,
+    'wealthimplant': 62612,
+    'perceptionimplant': 62612,
+    'violenceimplant': 62612,
+    'hyperimplant': 62612,
+    'ironskinimplant': 62612,
+    'salvageimplant': 62612,
+    'easterimplant': 29000,
+    'halloweenimplant': 29000,
     'nomadmesh': 128250,
     'scavengermesh': 128250,
     'shinobumesh': 128250,
@@ -241,14 +258,13 @@ const formatter = new Intl.NumberFormat('en-US', {
 const inventory = document.querySelector("table#inventory")
 const inventory_slots = inventory.querySelectorAll("td")
 
-function addPriceTag(nome) {
+function addPriceTag(nome, item) {
     const info_box = document.querySelector("#infoBox")
     const already = info_box.querySelector("p#extension-item-value")
     let sanitized_name = nome.split('_')
     sanitized_name = sanitized_name[0]
 
     if (already == null && database[sanitized_name]) {
-       
         let value = database[sanitized_name]
 
         if (nome.includes('stats'))
@@ -280,8 +296,15 @@ function addHoverEvent(){
         let is_locked = item.classList.contains('locked')
     
         if (item.hasChildNodes() && !is_locked) {
+            
             let name = item.children[0].attributes['data-type'].value
-            total_scrap_value += getScrapValue(name)
+            let value = getScrapValue(name)
+            total_scrap_value += value
+
+            if(value > 0)
+                item.classList.add("is-scrappable")
+            else
+                item.classList.remove("is-scrappable")
     
             // console.log({
             //     is_locked: is_locked, 
@@ -291,9 +314,11 @@ function addHoverEvent(){
             // })
     
             item.addEventListener("mousemove", function () {
-                addPriceTag(name)
+                addPriceTag(name, item)
             })
         }
+        else
+            item.classList.remove("is-scrappable")
     });
 }
 
@@ -305,9 +330,38 @@ function addScrapWorthText(){
     })
 }
 
+function addDOMWatcherEvent(){
+    // Select the node that will be observed for mutations
+    const targetsNode = document.querySelectorAll("table#inventory td")
+
+    // Options for the observer (which mutations to observe)
+    const config = { attributes: true, childList: true, subtree: true };
+
+    // Callback function to execute when mutations are observed
+    const callback = (mutationList, observer) => {
+        for (const mutation of mutationList) {
+            if (mutation.type === 'childList') {
+                console.log('A child node has been added or removed.');
+                total_scrap_value = 0
+                addHoverEvent();
+                addScrapWorthText();
+            }
+        }
+    };
+
+    // Create an observer instance linked to the callback function
+    const observer = new MutationObserver(callback);
+
+    // Start observing the target node for configured mutations
+    targetsNode.forEach((t) => {
+        observer.observe(t, config);    
+    })
+}
+
 setTimeout(function(){
     addHoverEvent();
     addScrapWorthText();
+    addDOMWatcherEvent();
 }, 1000)
 
 

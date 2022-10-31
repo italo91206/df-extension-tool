@@ -1,8 +1,9 @@
 {
     "manifest_version": 3,
-    "name": "Hello Extensions of the world!",
-    "description": "Base Level Extension",
-    "version": "1.0",
+    "name": "Dead Frontier Scrap Helper",
+    "author": "italoferreiradjk14@gmail.com",
+    "description": "Still in alpha - This enhances the user experience when checking for inventory items which you could scrap them.",
+    "version": "0.1",
     "action": {
         "default_icon": "images/icon-128.png"
     },
@@ -17,10 +18,12 @@
             "js": [
                 "scripts/content.js"
             ],
+            "css": ["styles.css"],
             "matches": [
-                "https://fairview.deadfrontier.com/onlinezombiemmo/index.php?page=50",
                 "https://fairview.deadfrontier.com/onlinezombiemmo/index.php?page=25",
-                "https://fairview.deadfrontier.com/onlinezombiemmo/index.php?page=35"
+                "https://fairview.deadfrontier.com/onlinezombiemmo/DF3D/DF3D_InventoryPage.php?page=31*",
+                "https://fairview.deadfrontier.com/onlinezombiemmo/index.php?page=35",
+                "https://fairview.deadfrontier.com/onlinezombiemmo/index.php?page=50"
             ]
         }
     ]
