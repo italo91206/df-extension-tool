@@ -19,7 +19,7 @@ This is a Chrome Extension Tool free of use that helps and enhances the user exp
 This project is totally open-source - you can clone, fork, modify and then send a PR so that together we can build a better tool, helping our community even more.
 All bugs and features ideas can be reported directly into the discord server or in-game messages.
 
-<div style="text-align: center">
+<div align="center">
     <img src="https://github.com/italo91206/df-extension-tool/blob/main/images/clan-logo.png" alt="Praetorian Guard">
     <h3>Praetorian Guard - Fairness and Respect</h3>
 </div>
