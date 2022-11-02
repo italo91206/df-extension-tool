@@ -19,4 +19,6 @@ This is a Chrome Extension Tool free of use that helps and enhances the user exp
 This project is totally open-source - you can clone, fork, modify and then send a PR so that together we can build a better tool, helping our community even more.
 All bugs and features ideas can be reported directly into the discord server or in-game messages.
 
-![Praetorian Guard - Fairness and Respect](./images/clan-logo.png)
+<div style="text-align: center">
+    ![Praetorian Guard - Fairness and Respect](./images/clan-logo.png)
+</div>
