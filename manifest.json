@@ -3,15 +3,15 @@
     "name": "Dead Frontier Scrap Helper",
     "author": "italoferreiradjk14@gmail.com",
     "description": "Still in alpha - This enhances the user experience when checking for inventory items which you could scrap them.",
-    "version": "0.1",
+    "version": "0.2",
     "action": {
         "default_icon": "images/icon-128.png"
     },
     "icons": {
-        "16": "images/icon-16.png",
-        "32": "images/icon-32.png",
-        "48": "images/icon-48.png",
-        "128": "images/icon-128.png"
+        "16": "images/df-extension-tool-logo-128.png",
+        "32": "images/df-extension-tool-logo-128.png",
+        "48": "images/df-extension-tool-logo-128.png",
+        "128": "images/df-extension-tool-logo-128.png"
     },
     "content_scripts": [
         {
@@ -20,6 +20,7 @@
             ],
             "css": ["styles.css"],
             "matches": [
+                "https://fairview.deadfrontier.com/onlinezombiemmo/index.php?page=24",
                 "https://fairview.deadfrontier.com/onlinezombiemmo/index.php?page=25",
                 "https://fairview.deadfrontier.com/onlinezombiemmo/DF3D/DF3D_InventoryPage.php?page=31*",
                 "https://fairview.deadfrontier.com/onlinezombiemmo/index.php?page=35",
