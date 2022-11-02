@@ -1,4 +1,6 @@
-# Dead Frontier Extension Tool
+![Dead Frontier Extension Tool](./images/big-hero-logo.png)
+
+# About the project
 This is a Chrome Extension Tool free of use that helps and enhances the user experience when inside an Outpost. The extension can be found and installed [here](https://chrome.google.com/webstore/detail/dead-frontier-scrap-helpe/gamejgjakdiakbfkgbldpnifkmjpaflh?hl=en). This extension does not collect any kind of data; to be more specific, it only adds more elements to the UI, and it's intended to not pass that limitation. If you have any doubts you can contact me on our clan discord (you can find the server invite on DF's forum [here](https://fairview.deadfrontier.com/onlinezombiemmo/index.php?topic=947166.0)).
 
 # Features ?
@@ -16,3 +18,5 @@ This is a Chrome Extension Tool free of use that helps and enhances the user exp
 # Support and how to contribute
 This project is totally open-source - you can clone, fork, modify and then send a PR so that together we can build a better tool, helping our community even more.
 All bugs and features ideas can be reported directly into the discord server or in-game messages.
+
+![Praetorian Guard - Fairness and Respect](./images/clan-logo.png)
