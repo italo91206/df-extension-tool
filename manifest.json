@@ -1,11 +1,11 @@
 {
     "manifest_version": 3,
-    "name": "Dead Frontier Scrap Helper",
+    "name": "Dead Frontier Extension Tool",
     "author": "italoferreiradjk14@gmail.com",
-    "description": "Still in alpha - This enhances the user experience when checking for inventory items which you could scrap them.",
+    "description": "Extension tool to enhance user experience while on outpost mode.",
     "version": "0.2",
     "action": {
-        "default_icon": "images/icon-128.png"
+        "default_icon": "images/df-extension-tool-logo-128.png"
     },
     "icons": {
         "16": "images/df-extension-tool-logo-128.png",
