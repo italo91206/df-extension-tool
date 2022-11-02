@@ -20,6 +20,8 @@ This project is totally open-source - you can clone, fork, modify and then send 
 All bugs and features ideas can be reported directly into the discord server or in-game messages.
 
 <div align="center">
-    <img src="https://github.com/italo91206/df-extension-tool/blob/main/images/clan-logo.png" alt="Praetorian Guard">
-    <h3>Praetorian Guard - Fairness and Respect</h3>
+    <a href="https://fairview.deadfrontier.com/onlinezombiemmo/index.php?topic=947166.0" target="_blank">
+        <img src="https://github.com/italo91206/df-extension-tool/blob/main/images/clan-logo.png" alt="Praetorian Guard">
+        <h3>Praetorian Guard - Fairness and Respect</h3>
+    </a>
 </div>
