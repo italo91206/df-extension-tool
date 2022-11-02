@@ -25,3 +25,6 @@ All bugs and features ideas can be reported directly into the discord server or 
         <h3>Praetorian Guard - Fairness and Respect</h3>
     </a>
 </div>
+
+# About me  
+You can find my in the game by the name of `Lp Magal`. Feel free to ask questions :)
