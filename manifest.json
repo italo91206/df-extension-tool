@@ -3,7 +3,7 @@
     "name": "Dead Frontier Extension Tool",
     "author": "italoferreiradjk14@gmail.com",
     "description": "Extension tool to enhance user experience while on outpost mode.",
-    "version": "0.2",
+    "version": "0.3",
     "action": {
         "default_icon": "images/df-extension-tool-logo-128.png"
     },
