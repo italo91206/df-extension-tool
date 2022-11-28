@@ -92,7 +92,7 @@ const database = {
     'fmfal': 14750,
     'sic550': 16925,
     'hawkop96': 19250,
-    'sweeper': 19250,
+    'streetsweeper': 19250,
     'ak47': 19250,
     'rg6': 19250,
     'meshslx': 19450,
