@@ -358,10 +358,20 @@ function addDOMWatcherEvent(){
     })
 }
 
+function injectScrapFromInv(){
+  const script = document.createElement("script")
+  script.src = chrome.runtime.getURL('./scripts/scrap_script.js');
+  script.onload = function(){
+    // console.log(this)
+  }
+  console.log(document.body)
+  document.body.appendChild(script);
+}
+
 setTimeout(function(){
     addHoverEvent();
     addScrapWorthText();
     addDOMWatcherEvent();
 }, 1000)
 
-
+injectScrapFromInv();

@@ -27,5 +27,13 @@
                 "https://fairview.deadfrontier.com/onlinezombiemmo/index.php?page=50"
             ]
         }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "scripts/scrap_script.js"
+        ],
+        "matches": ["<all_urls>"]
+      }
     ]
 }
