@@ -9,6 +9,8 @@ This is a Chrome Extension Tool free of use that helps and enhances the user exp
     - For now only weapons, armor and implants are accounted. 
 - Inventory total scrap value:
     - For each item in inventory which has scrap value checked, will be calculated the sum of all items, adding that info for you.
+- Scrap all:
+    - When on an eligle outpost, scrap all scrappable items from your inventory. No need to be visiting the yard anymore! 
 - More to come!
 
 # Features to come
